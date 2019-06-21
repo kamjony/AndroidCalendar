@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top"
+        android:text="@string/title_appointment"
+        android:textSize="@dimen/text_size"
+        android:textAlignment="center"
+        android:padding="@dimen/view_padding"
+        android:id="@+id/tv_title"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textSize="@dimen/text_size"
+        android:textAlignment="center"
+        android:padding="@dimen/view_padding"
+        android:id="@+id/tv_date"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_time"
+        android:textSize="@dimen/text_size"
+        android:textAlignment="center"
+        android:padding="@dimen/view_padding"
+        android:id="@+id/tv_time"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/detail_appointment"
+        android:textSize="@dimen/text_size"
+        android:textAlignment="center"
+        android:padding="@dimen/view_padding"
+        android:id="@+id/tv_details"/>
+
+    <Button
+        android:id="@+id/btnBack"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="@dimen/button_padding"
+        android:text="Back to Main" />
+
+
+</LinearLayout>

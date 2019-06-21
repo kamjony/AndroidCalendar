@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:ems="10"
+        android:hint="@string/title_appointment"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:id="@+id/editable_title"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/view_padding">
+
+        <TextView
+            android:textSize="@dimen/text_size"
+            android:id="@+id/editable_time"
+            android:hint="@string/add_time"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_weight="8"
+            android:layout_height="wrap_content"
+            android:gravity="left" />
+        <ImageView
+            android:id="@+id/image_view_time_picker"
+            android:src="@android:drawable/presence_away"
+            android:layout_weight="5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <EditText
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:hint="Details"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/editable_time"
+        android:id="@+id/editable_detail"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editable_detail"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:weightSum="100">
+
+        <Button
+            android:id="@+id/btnUpdate"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Update" />
+
+    </LinearLayout>
+
+</LinearLayout>
